@@ -9,7 +9,7 @@ varnish:
   vcl_extra_cookies: |
     if (req.http.Cookie ~ "checkout_fi_redirect_to_processing_page") {
       return (pass);
-
+    }
 
 elasticsearch:
   enabled: true
